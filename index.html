@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>array cardio 2</title>
+</head>
+<body>
+  <p><em>open console</em></p>
+  <script>
+   const people = [
+     {name: 'Wes', year: 1988},
+     {name: 'Lait', year: 1986 },
+     {name: 'Irv', year: 1970},
+     {name: 'Lux', year: 2015}
+   ];
+
+
+   const comments = [
+     {text: 'Love this!', id: 523423 },
+     {text: 'Super good', id: 823423 },
+     {text: 'You are the best', id: 2039842 },
+     {text: 'Ramen is my fav food ever', id: 123523 },
+     {text: 'Nice Nice Nice!', id: 542328 }
+   ];
+
+   const bool = people.some(person => {
+     return(2020-person.year >= 18);
+
+
+   });
+
+   console.log(bool);
+
+
+   const bool1 = people.every(person => {
+     2020-person.year >= 19
+   });
+
+   console.log(bool1)
+
+
+   const searchComments = comments.find(comment => comment.id == 823423 );
+   console.table(searchComments);
+
+   comments.splice(searchComments,3);
+   console.log(comments);
+    </script>
+</body>
+</html>
